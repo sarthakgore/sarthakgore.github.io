@@ -1,1 +1,0 @@
-# sarthakgore.github.io
