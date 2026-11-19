@@ -1,0 +1,89 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.006
+The Department Portal collects clean, validated data from university departments for submission to NAAC.
+
+2
+00:00:06.006 --> 00:00:12.877
+It follows the same five-step collection approach as the institute portal, with department names as the starting point.
+
+3
+00:00:12.877 --> 00:00:22.174
+The steps are department selection, email and passcode verification, criterion and metric selection, supporting document upload, and final review and submission.
+
+4
+00:00:22.874 --> 00:00:26.037
+In step one, the user selects their department.
+
+5
+00:00:26.037 --> 00:00:31.892
+Examples include Academics, Examination, Finance, Human Resources, IT, and the Library.
+
+6
+00:00:31.892 --> 00:00:36.670
+In step two, the user enters the authorised email address and passcode.
+
+7
+00:00:36.670 --> 00:00:40.978
+The displayed email and passcode are demonstration placeholders.
+
+8
+00:00:40.978 --> 00:00:45.285
+This connects the reporting workflow to the selected department.
+
+9
+00:00:45.985 --> 00:00:51.115
+In step three, the user selects the criterion and metric for the department’s submission.
+
+10
+00:00:51.115 --> 00:00:56.245
+They download the predefined template, complete its required columns, and upload the CSV.
+
+11
+00:00:56.245 --> 00:01:03.335
+As in the institute workflow, Google Apps Script defines the column structure and validation rules for the selected metric.
+
+12
+00:01:04.035 --> 00:01:07.260
+The portal includes separate Nil and Not Applicable options.
+
+13
+00:01:07.260 --> 00:01:12.528
+Nil means the metric is relevant to the department, but there is no data for the reporting period.
+
+14
+00:01:12.528 --> 00:01:16.076
+Not Applicable means the metric does not apply to that department.
+
+15
+00:01:16.076 --> 00:01:20.591
+Keeping these choices separate makes the reason for a submission without data clear.
+
+16
+00:01:21.291 --> 00:01:28.084
+In step four, the department uploads supporting documents for the selected metric to the submission folder in Google Drive.
+
+17
+00:01:28.084 --> 00:01:35.595
+The portal follows the shared upload workflow: editing access is available during upload, and changes to viewing after final submission.
+
+18
+00:01:35.595 --> 00:01:38.412
+The documents support the data supplied for review.
+
+19
+00:01:39.112 --> 00:01:44.788
+In step five, the user reviews the department details, selected metric, and submission information.
+
+20
+00:01:44.788 --> 00:01:48.802
+They confirm the declaration checkboxes and complete final submission.
+
+21
+00:01:48.802 --> 00:01:53.791
+This makes the departmental data and supporting documents available for quality review.
+
+22
+00:01:53.791 --> 00:02:03.080
+Google Apps Script, Google Sheets, and Google Drive connect the collection process and help prepare clean, validated departmental information for NAAC submission.

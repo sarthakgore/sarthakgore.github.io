@@ -1,0 +1,137 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.732
+The purpose of the NAAC AQAR portal is to collect clean, validated data from university institutes for submission to NAAC, the National Assessment and Accreditation Council.
+
+2
+00:00:10.732 --> 00:00:22.767
+At Symbiosis, the portal supports forty-three institutes through five steps: institute selection, staff verification, metric and CSV validation, supporting document upload, and final submission.
+
+3
+00:00:22.767 --> 00:00:26.924
+QMB then reviews the records and requests corrections where needed.
+
+4
+00:00:27.624 --> 00:00:32.415
+First, the coordinator selects an institute from the list mapped in Google Sheets.
+
+5
+00:00:32.415 --> 00:00:38.200
+In step two, the portal checks the authorised email address and shared passcode for that institute.
+
+6
+00:00:38.200 --> 00:00:40.362
+The details shown here are fictional.
+
+7
+00:00:40.362 --> 00:00:46.205
+After verification, the coordinator can continue with submission and access the institute dashboard.
+
+8
+00:00:46.905 --> 00:00:55.618
+In step three, the coordinator selects a criterion and metric, downloads its predefined template, completes the data, and uploads the CSV.
+
+9
+00:00:55.618 --> 00:00:59.975
+Google Apps Script defines the expected columns and validation rules.
+
+10
+00:00:59.975 --> 00:01:04.521
+If the metric applies but there is no data, the coordinator chooses Nil.
+
+11
+00:01:04.521 --> 00:01:08.120
+If the metric does not apply, they choose Not Applicable.
+
+12
+00:01:08.820 --> 00:01:13.757
+In step four, supporting documents are uploaded to a dedicated Google Drive folder.
+
+13
+00:01:13.757 --> 00:01:16.909
+The coordinator has editing access during this stage.
+
+14
+00:01:16.909 --> 00:01:21.430
+In step five, they review the details and accept the declaration checkboxes.
+
+15
+00:01:21.430 --> 00:01:29.520
+After final submission, the coordinator’s folder access changes from editing to viewing, and the submission is available for QMB review.
+
+16
+00:01:30.220 --> 00:01:35.681
+The institute dashboard shows submission history, review status, and requested corrections.
+
+17
+00:01:35.681 --> 00:01:41.742
+Coordinators can identify approved records and items returned for CSV or supporting-document updates.
+
+18
+00:01:41.742 --> 00:01:50.624
+These numbers are demonstration data: thirty-six approved, nine pending, four requiring correction, and two not submitted, out of fifty-one metrics.
+
+19
+00:01:50.624 --> 00:01:53.625
+They are not actual institute performance results.
+
+20
+00:01:54.325 --> 00:02:01.434
+Authorised QMB reviewers use the admin dashboard to inspect submissions and mark them approved or requiring correction.
+
+21
+00:02:01.434 --> 00:02:08.125
+The interface also includes institute filters, criterion summaries, a status tracker, and report export options.
+
+22
+00:02:08.125 --> 00:02:11.530
+All figures here are synthetic and internally consistent.
+
+23
+00:02:11.530 --> 00:02:19.834
+For example, fifteen hundred approved, four hundred fifty pending, and one hundred fifty redo records total twenty-one hundred submissions.
+
+24
+00:02:20.534 --> 00:02:23.061
+A completed submission moves to QMB review.
+
+25
+00:02:23.061 --> 00:02:30.936
+If changes are needed, the institute sees the redo request in its dashboard, makes the requested correction, and resubmits for review.
+
+26
+00:02:30.936 --> 00:02:33.169
+Approval completes the current review.
+
+27
+00:02:33.169 --> 00:02:39.339
+The portal also preserves earlier versions, so a correction does not mean losing the previous submission.
+
+28
+00:02:40.039 --> 00:02:46.630
+For supporting documents, older versions remain backed up in Google Drive and revised files go into a new submission folder.
+
+29
+00:02:46.630 --> 00:02:52.157
+For CSV data, the old records are backed up in Google Sheets before the current records are overwritten.
+
+30
+00:02:52.157 --> 00:02:57.365
+This preserves earlier versions for reference while allowing the current submission to be updated.
+
+31
+00:02:58.065 --> 00:03:07.861
+The solution connects Google Apps Script for workflow and validation, Google Sheets for structured records and backups, and Google Drive for documents and folder permissions.
+
+32
+00:03:07.861 --> 00:03:12.646
+It demonstrates portal development, institutional reporting, and review coordination.
+
+33
+00:03:12.646 --> 00:03:15.686
+The accompanying case study explains the full process.
+
+34
+00:03:15.686 --> 00:03:20.865
+No confidential records, working credentials, or unverified time-saving claims are included.

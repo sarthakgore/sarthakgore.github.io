@@ -1,0 +1,157 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.096
+For APQN 2026 at Symbiosis International University, Sarthak Gore built the conference website and paper submission portal.
+
+2
+00:00:07.096 --> 00:00:14.710
+The conference received more than fifty papers and more than two hundred registrations from national and international participants.
+
+3
+00:00:14.710 --> 00:00:20.479
+The digital workflow covered paper collection, review, delegate registration, and payment reporting.
+
+4
+00:00:20.479 --> 00:00:24.344
+Some submitted papers were selected; no acceptance rate is claimed.
+
+5
+00:00:25.044 --> 00:00:29.738
+My individual contribution was the conference website and paper submission portal.
+
+6
+00:00:29.738 --> 00:00:32.772
+The IT team implemented the BillDesk payment gateway.
+
+7
+00:00:32.772 --> 00:00:38.496
+The transaction dashboard was a joint effort, with approximately equal contributions from me and IT.
+
+8
+00:00:38.496 --> 00:00:42.960
+I also prepared transaction reports and dashboards for management and finance.
+
+9
+00:00:42.960 --> 00:00:48.284
+This case study credits the payment integration to IT and the dashboard to our collaboration.
+
+10
+00:00:48.984 --> 00:00:57.489
+The paper portal guides authors through paper details, author information, corresponding-author consent, co-authors, file uploads, and declarations.
+
+11
+00:00:57.489 --> 00:01:00.822
+The demonstrated entry screen uses an emailed access code.
+
+12
+00:01:00.822 --> 00:01:05.534
+Abstracts are limited to two hundred words, and Word manuscripts to ten megabytes.
+
+13
+00:01:05.534 --> 00:01:16.223
+On submission, the system creates a paper identifier, stores structured records in Google Sheets and documents in Google Drive, and emails an acknowledgement to the corresponding author.
+
+14
+00:01:16.923 --> 00:01:19.844
+Administrators assign submitted papers to reviewers.
+
+15
+00:01:19.844 --> 00:01:25.966
+Reviewers download their assigned papers and record acceptance or rejection, with an optional author message.
+
+16
+00:01:25.966 --> 00:01:31.864
+In the reviewed source, reviewer decisions are released directly and emailed to the corresponding author.
+
+17
+00:01:31.864 --> 00:01:35.290
+Administrators can request revisions before a final decision.
+
+18
+00:01:35.290 --> 00:01:41.076
+When a revision is requested, a new document version can be uploaded while previous files are retained.
+
+19
+00:01:41.076 --> 00:01:44.053
+Authors can track their status and released feedback.
+
+20
+00:01:44.753 --> 00:01:49.687
+The general registration form collects national and international delegate details.
+
+21
+00:01:49.687 --> 00:01:55.692
+Payment categories distinguish APQN members from non-members, and local from international delegates.
+
+22
+00:01:55.692 --> 00:02:01.519
+The form applies early-bird or regular prices and selects Indian rupees or US dollars accordingly.
+
+23
+00:02:01.519 --> 00:02:04.016
+Participants may add a half-day excursion.
+
+24
+00:02:04.016 --> 00:02:11.091
+A separate form serves the SIU community, including staff, faculty, and students, with employee or student identifiers.
+
+25
+00:02:11.791 --> 00:02:16.109
+After registration, participants review the fee summary and proceed to BillDesk.
+
+26
+00:02:16.109 --> 00:02:19.995
+The IT team implemented the gateway integration for the payment journey.
+
+27
+00:02:19.995 --> 00:02:26.093
+Following a successful payment, the participant receives an email confirmation with the payment receipt attached.
+
+28
+00:02:26.093 --> 00:02:34.351
+The shared administrative dashboard links registration information with payment records so the team can check transaction outcomes and support enquiries.
+
+29
+00:02:35.051 --> 00:02:39.485
+The transaction dashboard was jointly developed by Sarthak and the IT team.
+
+30
+00:02:39.485 --> 00:02:46.640
+It shows successful, failed, and active transactions, with filters and a facility to retrieve the latest BillDesk status.
+
+31
+00:02:46.640 --> 00:02:51.192
+The team uses it to cross-check saved records against the BillDesk dashboard.
+
+32
+00:02:51.192 --> 00:02:55.154
+Every number and record shown here is fictional demonstration data.
+
+33
+00:02:55.154 --> 00:02:59.056
+No confidential participant or transaction details are reproduced.
+
+34
+00:02:59.756 --> 00:03:04.553
+Active transactions represent payment journeys that participants left incomplete.
+
+35
+00:03:04.553 --> 00:03:07.395
+The team follows up and shares the payment link.
+
+36
+00:03:07.395 --> 00:03:12.844
+Once the participant completes payment, the successful outcome is verified against BillDesk.
+
+37
+00:03:12.844 --> 00:03:20.424
+Registration reports connect participant details with payment status, while the staff report offers CSV, Excel, and PDF exports.
+
+38
+00:03:20.424 --> 00:03:25.280
+These records supported the financial reports prepared for management and finance.
+
+39
+00:03:25.280 --> 00:03:29.484
+All confidential dashboard examples in this walkthrough use dummy data.
