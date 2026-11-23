@@ -2,6 +2,7 @@
   'use strict';
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const fine = matchMedia('(hover: hover) and (pointer: fine)');
+  const mobile = matchMedia('(max-width: 991px)');
   let motionOff = reduced.matches;
   let typingTimer;
   const typing = [...document.querySelectorAll('.typing-animation')];
@@ -23,11 +24,13 @@
     document.body.classList.toggle('motion-off', motionOff);
     if (window.jQuery) {
       jQuery.fx.off = motionOff;
-      jQuery('.home-slider').trigger(motionOff ? 'stop.owl.autoplay' : 'play.owl.autoplay');
+      jQuery('.home-slider').trigger(motionOff || mobile.matches ? 'stop.owl.autoplay' : 'play.owl.autoplay');
     }
     type();
   }
-  reduced.addEventListener('change', () => { motionOff = reduced.matches; applyMotion(); });
+  const watch = (query, callback) => query.addEventListener ? query.addEventListener('change', callback) : query.addListener(callback);
+  watch(reduced, () => { motionOff = reduced.matches; applyMotion(); });
+  watch(mobile, applyMotion);
   applyMotion();
 
   cards.forEach(card => {
@@ -57,10 +60,25 @@
   hero.addEventListener('pointerleave', () => {
     hero.style.removeProperty('--portrait-x'); hero.style.removeProperty('--portrait-y');
   });
-  document.querySelectorAll('#ftco-nav a').forEach(link => link.addEventListener('click', () => {
-    if (window.jQuery) jQuery('#ftco-nav').collapse('hide');
-  }));
+  // A native menu avoids lost taps while Bootstrap's collapse transition is running.
+  const navigation = document.querySelector('#ftco-nav');
+  const menuButton = document.querySelector('[aria-controls="ftco-nav"]');
+  function closeMenu() {
+    navigation.classList.remove('show', 'collapsing');
+    navigation.classList.add('collapse');
+    navigation.style.removeProperty('height');
+    menuButton.setAttribute('aria-expanded', 'false');
+  }
+  menuButton.removeAttribute('data-toggle');
+  menuButton.addEventListener('click', event => {
+    event.stopPropagation();
+    const open = menuButton.getAttribute('aria-expanded') !== 'true';
+    navigation.classList.toggle('show', open);
+    menuButton.setAttribute('aria-expanded', String(open));
+  });
+  document.querySelectorAll('#ftco-nav a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('click', event => { if (!event.target.closest('#ftco-navbar')) closeMenu(); });
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && window.jQuery) jQuery('#ftco-nav').collapse('hide');
+    if (event.key === 'Escape') { closeMenu(); if (navigation.contains(document.activeElement)) menuButton.focus(); }
   });
 })();

@@ -7,7 +7,7 @@
 
 	"use strict";
 
-	$(window).stellar({
+	if (window.matchMedia('(min-width: 992px) and (pointer: fine)').matches) $(window).stellar({
     responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
@@ -38,7 +38,7 @@
 	loader();
 
 	// Scrollax
-   $.Scrollax();
+   if (window.matchMedia('(min-width: 992px) and (pointer: fine)').matches) $.Scrollax();
 
 
 
@@ -96,12 +96,12 @@
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{
-	        items:1
+	        items:1, autoplay:false, touchDrag:false, mouseDrag:false
 	      },
 	      600:{
-	        items:1
+	        items:1, autoplay:false, touchDrag:false, mouseDrag:false
 	      },
-	      1000:{
+	      992:{
 	        items:1
 	      }
 	    }
